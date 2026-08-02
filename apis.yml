@@ -1,19 +1,44 @@
 aid: swiftlane
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/swiftlane.png
 name: Swiftlane
-description: Swiftlane is a company surfaced as a portfolio company of bloomberg-beta and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Swiftlane is a San Francisco-based physical security company providing cloud-based
+  access control and video intercom systems for multifamily residential and commercial buildings.
+  Its touchless, mobile-first platform combines face recognition, mobile and key-card credentials,
+  visitor PIN access, vehicle readers, smart locks, and a centralized cloud management dashboard
+  with access logs, user management, and remote unlock. Swiftlane publishes a customer product
+  site, a large blog, and an Intercom-hosted help center, but exposes no public developer API,
+  OpenAPI, SDKs, or webhooks; integrations are delivered through partners such as Okta, Azure,
+  Google Workspace, and Eagle Eye.
 url: https://raw.githubusercontent.com/api-evangelist/swiftlane/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - bloomberg-beta
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: no-public-api
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Access Control
+- Physical Security
+- Video Intercom
+- Smart Building
+- Facial Recognition
+- Proptech
+- IoT
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/swiftlane-domain-security.yml
+- type: LLMsTxt
+  url: llms/swiftlane-llms.txt
+- type: WellKnown
+  url: well-known/swiftlane-well-known.yml
 - type: Website
   url: https://www.swiftlane.com/
+- type: Blog
+  url: https://swiftlane.com/blog/
+- type: HelpCenter
+  url: https://support.swiftlane.com/
+- type: Integrations
+  url: https://swiftlane.com/integrations/
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1

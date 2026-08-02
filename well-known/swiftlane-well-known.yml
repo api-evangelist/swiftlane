@@ -1,0 +1,25 @@
+generated: '2026-07-21'
+method: probed
+source: live probes of Swiftlane primary hosts for standard .well-known endpoints
+hosts:
+- host: www.swiftlane.com
+  probes:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: swiftlane.com
+  probes:
+  - path: /.well-known/security.txt
+    status: 404
+notes: >-
+  No first-party Swiftlane .well-known artifacts are published. The help center
+  at support.swiftlane.com serves a /.well-known/security.txt (HTTP 200), but it
+  is Intercom's vendor security.txt (Canonical: app.intercom.com), not a Swiftlane
+  security program, so it is not saved or attributed to Swiftlane.
